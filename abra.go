@@ -8,7 +8,8 @@ package abra
 */
 import "C"
 
-func plusik(a,b int) (C.int) {
+// Plusik simply sums two arguments.
+func Plusik(a,b int) (C.int) {
 	return C.plusik(1,2);
 }
 
