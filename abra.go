@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package abra
 
 /*
 #cgo CFLAGS: -Ilib/testcpplib
@@ -10,7 +8,7 @@ import "fmt"
 */
 import "C"
 
-func main() {
-	fmt.Printf("calculate %d+%d=%d\n", 1, 2, C.plusik(1,2))
+func plusik(a,b int) (C.int) {
+	return C.plusik(1,2);
 }
 
